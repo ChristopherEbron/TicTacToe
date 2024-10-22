@@ -12,7 +12,7 @@
       std::cout << "===========\n";
     }
   }
-
+  // Check for winner function
   bool checkForWinner(char Board[3][3], char player) {
     for(int i = 0; i < 3; i++){
       if (Board[0][i] == player && Board[1][i] == player && Board[2][i] == player){
@@ -40,44 +40,22 @@ int main() {
   int inputRow;
 
   // Create board
-  char board[COLUMNS][ROWS] = {{'X',' ',' '}, {' ','X',' '}, {'X',' ','X'}};
+  char board[COLUMNS][ROWS] = {{' ',' ',' '}, {' ',' ',' '}, {' ',' ',' '}};
   bool isRunning = true;
 
-  // std::cout << "Welcome to Tic Tac Toe!!\n";
-  // std::cout << "Player 1 choose a square, by first selecting a column then a row:  \n";
-  // std::cin >> inputColumn >> inputRow;
   
 
-  // std::cout << "You chose " << inputColumn << " for a column and " << inputRow << " for a row\n";
-
-
-
-
-
-  // while(isRunning) {
-
-  //   if(isPlayerX) {
-  //     std::cout << "Player X choose a square\n";
-  //   } else {
-  //     std::cout << "Player 0 choose a square \n";
-  //   }
-
     
     
-  // }
+  
 
 
   
 
 
   displayBoard(board,ROWS);
-  std::cout << checkForWinner(board,player) << std::endl;
+  
 
-  // if(checkForWinner(board,player)) {
-  //   std::cout << "player one you are the winner!";
-  // }else{
-  //   std::cout << "You did not win!";
-  // };
-
+  
   return 0;
 }
